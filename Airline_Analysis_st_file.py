@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 st.image('image.jpg')
-st.set_page_config(layout='wide')
+st.set_page_config(layout='wide',page_title= 'Airline Passenger Satisfaction EDA')
 st.header('Airline Passenger Satisfaction Analysis Project')
 page = st.sidebar.radio('Page', ['Home', 'Column overview', 'Analysis'])
 df = pd.read_csv('cleaned data.csv', index_col= 0)
