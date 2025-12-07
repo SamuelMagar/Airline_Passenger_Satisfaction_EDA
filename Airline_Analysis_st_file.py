@@ -64,7 +64,7 @@ elif page == 'Column overview':
         tab_cat.plotly_chart(px.histogram(data_frame= df, x= column_cat, title= column_cat,text_auto=True).update_xaxes(categoryorder = 'max descending'))
 
     elif chart == 'Pie':
-        tab_cat.plotly_chart(px.pie(data_frame= df, names= column_cat, title= column_cat,text_auto=True))
+        tab_cat.plotly_chart(px.pie(data_frame= df, names= column_cat, title= column_cat))
 
 elif page == 'Analysis':
     st.header('1- Is there any numerical correlation between Data ?')
